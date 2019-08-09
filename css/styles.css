@@ -1,0 +1,56 @@
+body {
+    background: #ccc;
+    height: 100%;
+  }
+  
+  section {
+    /* display: flex; */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+  section canvas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    outline: none;
+    cursor: crosshair;
+    background: white;
+  }
+  section .image {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    background: #fff url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/3679/FaceTest-half.svg") no-repeat center right;
+    border-right: 1px dashed #ccc;
+    cursor: not-allowed;
+  }
+  
+  button {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    padding: 10px;
+    text-align: center;
+  }
+  button.active {
+    background: green;
+    border: none;
+    color: #fff;
+  }
+  
+  #ten-px {
+    left: 10px;
+    top: 10px;
+  }
+  
+  #two-px {
+    left: 10px;
+    top: 50px;
+  }
+  
